@@ -1,0 +1,27 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#titulo {
+    
+    color: blue;
+    margin-left: 7%;
+    margin-top: 3%;
+}
+
+#subtitulo {
+    font-family: licorice;
+    color:chartreuse;
+    margin-left: 8%;
+}
+
+#check {
+    display: inline-block;
+}
+ 
+p, h1 {
+    color:brown;
+}
