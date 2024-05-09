@@ -7,42 +7,55 @@
     <title>Quero ser atleta</title>
 </head>
 <body>
-    <div>
+
+    <header>
+        <nav>
+            <a href="index.html">Pagina Inicial</a>
+            <a href="atletas destacados.html">Atletas destacados</a>
+            <a href="modabilidades paralimpicas.html">Modabilidades Paralimpicas</a>
+            <a href="historias de jogos olimpicos.html">historia de jogos olimpicos</a>
+            <a href="desafios e superaçao.html">Desafios e Superaçao</a>
+            <a href="noticias e eventos.html">Noticias e Eventos</a>
+            <a href="formulario.html">Quero ser atleta</a>
+        </nav>
+      </header>
+      
+    <div class="campo">
         <h1 id="titulo">Por que não ser atleta? aqui temos lugares de esportes para voce</h1>
-        <p>Insira seu telefone caso estiver interessado</p>
+        <p id="subtitulo">Insira seu telefone caso estiver interessado</p>
     </div>
 
     <form>
-        <fieldset>
-            <div>
-                <label>Telefone</label>
-                <input type="number" name="Telefone" id="nome">
+        <fieldset class="campo">
+            <div class="grupo">
+                <label for="telefone">Telefone</label>
+                <input type="number" name="Telefone" id="telefone">
             </div>
             <br>
-            <div>
-                <label>Nome</label>
-                <input type="text" name="Nome">
+            <div class="grupo">
+                <label for="nome">Nome</label>
+                <input type="text" name="Nome" id="nome">
             </div>
         </fieldset>
 
-           <div>
-             <label>Email</label>
+           <div class="grupo">
+             <label for="email">Email</label>
              <input type="email" name="email" id="email">
            </div>
            <br>
-           <div>
+           <div class="campo">
                 <label> Qual e seu esporte de preferencia</label>
                 <label>
-                    <input type="radio" name="esporte" volue="futebol" checked>FUTEBOL
+                    <input type="radio" name="esporte" value="futebol" checked>FUTEBOL
                 </label> 
                 <label>
-                    <input type="radio" name="esporte" volue="Volei" checked>VOLEI
+                    <input type="radio" name="esporte" value="Volei" checked>VOLEI
                 </label>
                 <label>
-                    <input type="radio" name="esporte" volue="basquete" checked> BASQUETE 
+                    <input type="radio" name="esporte" value="basquete" checked> BASQUETE 
                 </label>
            </div>
-           <div>
+           <div class="campo">
                 <label>QUER CONHECER O ESTUDIO</label>
                     <select>
                         <option selected disabled value="">selecione</option>
@@ -50,20 +63,22 @@
                         <option>Nao</option>
                     </select>
             </div>
-            <div>
-                <label>oque voce pratica</label> <br>
-                <input type="checkbox" id="perguntinha" name="perguntinha" volue="exercicios regulamente">
-                <label>exercicios regulamente</label> <br>
-                <input type="checkbox" id="perguntinha" name="perguntinha" volue="esporte">
-                <label>esporte</label>
-                <input type="checkbox" id="perguntinha" name="perguntinha" volue="ou nada">
-                <label>ou nada</label>
+
+            <fieldset class="grupo">
+            <div class="campo">
+                <label for="exercicios">oque voce pratica</label> <br>
+                <input type="checkbox" id="exercicios" name="perguntinha" value="exercicios regulamente">
+                <label for="exercicios">exercicios regulamente</label> <br>
+                <input type="checkbox" id="esporte" name="perguntinha" value="esporte">
+                <label for="exercicios">esporte</label>
+                <input type="checkbox" id="nada" name="perguntinha" value="ou nada">
+                <label for="exercicios">ou nada</label>
             </div>
         </fieldset>
 
-        <div>
-            <label>escreva sobre voce</label>
-            <textarea rows="S" style="width: 60%;" id="historia" name="historia"></textarea>
+        <div class="campo">
+            <label for="historia">escreva sobre voce</label>
+            <textarea rows="5" style="width: 60%;" id="historia" name="historia"></textarea>
         </div>
 
         <button type="submit" onsubmit="">enviar</button>

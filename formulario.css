@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
 
 *{
     margin: 0;
@@ -6,22 +6,104 @@
 }
 
 #titulo {
-    
-    color: blue;
-    margin-left: 7%;
+
+    font-family: Bebas Neue;
+    color: rgb(100, 68, 25);
+    margin-left: 15%;
     margin-top: 3%;
 }
 
 #subtitulo {
-    font-family: licorice;
-    color:chartreuse;
-    margin-left: 8%;
+    font-family: Dancing Script;
+    color:rgb(42, 70, 13);
+    margin-left: 30%;
 }
 
 #check {
     display: inline-block;
 }
- 
-p, h1 {
-    color:brown;
+
+fieldset {
+   border: 0%;
+}
+
+body{
+    background-color: rgb(197, 178, 135);
+    font-family: Dancing Script;
+    font-size: 100%;
+    color:rgb(173, 202, 142);
+    margin-left: 25%;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+input, select, textarea, button {
+
+font-family: Dancing Script;
+font-size: 100%;
+color:rgb(161, 157, 150);
+border-radius: 8px;
+}
+
+.grupo:betore, grupo:after {
+    display: table;
+    margin-left: 15%;
+} 
+
+.grupo:after {
+    clear: both;
+}
+
+.campo {
+    margin-bottom: 2%;
+}
+
+.campo label {
+    margin-left: 0,1%;
+    color:rgb(36, 30, 70);
+    display: block;
+}
+
+fieldset.grupo .campo {
+    float: left;
+    margin-right: 4%;
+}
+
+.campo input[type="text"], .campo input[type=email], .campo select, .campo textarea {
+    padding: 2%;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px greenyellow;
+    display: block;
+} 
+
+.campo select option {
+    padding: 2%;
+}
+
+.campo input:focus, .campo select:focus .campo textarea:focus {
+    background: green;
+}
+
+.botao {
+    font-size: 80%;
+    background: rgb(148, 101, 14);
+    border: 0%;
+    color:blue;
+    padding: 2px 2px;
+    box-shadow: 2px 2px 3px red;
+    text-shadow: 1px 1px 1px rgb(88, 85, 83);
+    position: absolute;
+    left: 27%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.botao:hover {
+    background: green;
+    box-shadow: inset 2px 2px 2px blueviolet;
+    text-shadow: none;
+}
+
+.botao, select {
+    cursor: pointer;
 }
