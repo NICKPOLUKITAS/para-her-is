@@ -1,0 +1,12 @@
+img {
+    width: 15;
+}
+
+.flex-conteiner {
+    background-color: aqua;
+    display: flex;
+    flex-direction: nowrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
