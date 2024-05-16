@@ -2,8 +2,8 @@ h1{
     color:aquamarine;
     background-color:rgb(12, 85, 81);
     border: 3px solid black;
-    margin-right: 1080px;
-  }
+    text-align: center;
+}
 
   p{color:rgb(36, 56, 16); 
     background-color: black;
@@ -27,3 +27,39 @@ h1{
   body{
     background-color: rgb(134, 159, 180);
   }
+
+.item1 {grid-area: Cabecalho;}
+.item2 {grid-area: menu;}
+.item3 {grid-area: conteudo;}
+.item4 {grid-area: imagens;}
+.item5 {grid-area: rodape;}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'Cabecalho Cabecalho Cabecalho Cabecalho Cabecalho Cabecalho'
+    'menu conteudo conteudo conteudo imagens imagens'
+    'menu conteudo conteudo conteudo imagens imagens' 
+    'rodape rodape rodape rodape rodape rodape';
+
+    gap: 10px;
+    background-color: blueviolet;
+    padding: 10px;
+}
+
+.grid-container > div {
+    background-color: aquamarine;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.item2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.item3 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
