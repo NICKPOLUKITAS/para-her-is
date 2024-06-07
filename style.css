@@ -1,3 +1,11 @@
+*{
+ text-decoration: none;
+}
+
+a{
+  color: inherit;
+}
+
 h1{
     color:aquamarine;
     background-color:rgb(12, 85, 81);
@@ -18,6 +26,14 @@ h1{
     margin-right: auto;
   }
 
+  .item1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
   p{
     color: blue(1, 22, 41);
     background-color:rgb(119, 177, 177);
@@ -25,7 +41,15 @@ h1{
   }
 
   body{
-    background-color: rgb(134, 159, 180);
+    color:rgb(12, 85, 81);
+    background-color: 
+    url(papel\ de\ parede.jpg) center no-repeat,
+    green
+  }
+
+header{
+    color: rgb(255, 255, 255);
+    background-color: rgb(147, 209, 151);
   }
 
 .item1 {grid-area: Cabecalho;}
@@ -35,23 +59,23 @@ h1{
 .item5 {grid-area: rodape;}
 
 .grid-container {
-    display: grid;
-    grid-template-areas: 
-    'Cabecalho Cabecalho Cabecalho Cabecalho Cabecalho Cabecalho'
-    'menu conteudo conteudo conteudo imagens imagens'
-    'menu conteudo conteudo conteudo imagens imagens' 
-    'rodape rodape rodape rodape rodape rodape';
+  display: grid;
+  grid-template-areas: 
+  'Cabecalho Cabecalho Cabecalho Cabecalho Cabecalho Cabecalho'
+  'menu conteudo conteudo conteudo imagens imagens'
+  'menu conteudo conteudo conteudo imagens imagens' 
+  'rodape rodape rodape rodape rodape rodape';
 
-    gap: 10px;
-    background-color: blueviolet;
-    padding: 10px;
+  gap: 10px;
+  background-color: blueviolet;
+  padding: 10px;
 }
 
 .grid-container > div {
-    background-color: aquamarine;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
+  background-color: aquamarine;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
 }
 
 .item2 {
@@ -62,4 +86,44 @@ h1{
 .item3 {
     grid-row-start: 2;
     grid-row-end: 4;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  animation: example 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes example {
+  0% {color:rgb(240, 11, 11); left:0px; top:0px;}
+  50% {color:rgb(34, 64, 254); left:150px; top:100px;}
+  75% {color:rgb(251, 255, 37); left:50px; top:0px;}
+  150% {color:rgb(255, 255, 255); left:200px; top:0px;}
+}
+
+@media only screen and (max-width: 600px){
+  .grid-container {background-color: rgb(34, 51, 45); font-size: 10px;}
+  .item1 {color:brown;}
+  h1 {font-size: 25px;}
+  p , u {font-size:20px;}
+}
+
+@media only screen and (min-width: 600px){
+  .grid-container {background-color: rgb(182, 145, 212); font-size: 10px;}
+  h1 {font-size: 30px;}
+}
+
+@media only screen and (max-width: 768px){
+    .grid-container {background-color: rgb(169, 203, 117); font-size: 10px;}
+    h1 {font-size: 25px;}
+  }
+
+@media only screen and (min-width: 992px){
+    .grid-container {background-color: rgb(111, 220, 226); font-size: 10px;}
+    h1 {font-size: 25px;}
+}
+
+@media only screen and (min-width: 1200px){
+  .grid-container {background-color: rgb(133, 13, 181); font-size: 10px;}
+  h1 {font-size: 25px;}
 }

@@ -11,5 +11,12 @@ img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
 }
+
+body{
+    color:rgb(12, 85, 81);
+    background:
+    url(papeldeparede.jpg)
+    green
+}  
+
