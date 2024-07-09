@@ -1,0 +1,6 @@
+body {
+    background-image: url("papper.jfif");
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
+    
+}
