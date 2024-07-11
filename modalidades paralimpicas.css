@@ -1,4 +1,17 @@
+body{
+  background: rgb(169, 216, 226);
 
+}
+.container {
+  display: flex;
+  justify-content: center; 
+   
+}
+
+.alinhar {
+  display: inline-block;
+ 
+}
   
   
   @keyframes bounce-animation {

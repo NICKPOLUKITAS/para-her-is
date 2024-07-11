@@ -1,7 +1,8 @@
 body {
     background-image: url("papper.jfif");
     background-repeat: no-repeat; /* Evita repetição da imagem */
-    background-size: auto; /* Ajusta a imagem para cobrir todo o fundo */
+    background-size: 1450px 850px; /* Ajusta a imagem para cobrir todo o fundo */
+   
 }
 
 .navbar{
@@ -22,6 +23,16 @@ body {
     background-color:#7eb3a7;
   }
 
-  
+.mb-1 {
+  color: azure;
+}
  
- 
+.texto{
+  width: 1800px;
+  height: 600px;
+  text-align: center;
+}
+
+.btn {
+  background: #559065;
+}
