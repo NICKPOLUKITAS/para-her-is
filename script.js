@@ -1,24 +1,37 @@
-alert('Olá, caro curioso');
-let quantosEsportesTem = 37;
-let chute = prompt('Quantos esportes voce acha que tem nas paralimpiadas??');
+alert('Quantos esportes você acha que tem nas paralimpiadas?');
+let quantosEsportesTem = 15;
+let chute = prompt('Cite de 1 a 20');
 let tentativas = 1;
 
 while (chute != quantosEsportesTem) {
-    chute = prompt('Quantos esportes voce acha que tem nas paralimpiadas?'); //nao entrar,ate acertar
+    chute = prompt('Cite de 1 a 20'); //nao entrar,ate acertar
 
 
 if (chute == quantosEsportesTem) {
-    alert(`Oba, voce acertou usando ${tentativas} tentativas`);
+    alert(`Obá, você acertou usando ${tentativas} tentativas`);
 } else {
     if (chute > quantosEsportesTem) {
-        alert('A quantidade de Esporte e menor');
+        alert('A quantidade de Esportes é menor');
     
     } else {
-        alert('A quantidade de Esportes e maior');
+        alert('A quantidade de Esportes é maior');
     
 }
  tentativas++;
 } 
 }
+
+$(document).ready(function() {
+    $(window).scroll(function() {
+      if($(this).scrollTop() < $("#green").height()){
+         $(".navbar").removeClass("bg-dark");
+      }
+      else{
+         $(".navbar").addClass("bg-dark");
+      }
+    });
+  });
+
+  
 
 

@@ -1,5 +1,7 @@
-.body {
-	background-color: green;
+.trem {
+    background-image: url("papper2.jpg");
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-size: auto; /* Ajusta a imagem para cobrir todo o fundo */
 }
 
 .testimonial-card .card-up {
@@ -29,4 +31,8 @@
     width: 135px;
     
 }
+
+
+
+
 
